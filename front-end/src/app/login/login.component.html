@@ -1,0 +1,19 @@
+<div class="jumbotron">
+    <p class="lead"> ¿Aún no eres miembro? Por favor, <a routerLink='/register'>regístrate</a></p>.
+
+    <form (ngSubmit)="submit()">
+        <div role="alert" *ngIf='formError' class="alert alert-danger">
+            {{formError}}
+        </div>
+
+        <label><h4>Correo</h4></label>
+        <input class="form-control" type="email" name="email" ngModel email placeholder="correo" [(ngModel)]="usuario.correo">
+        
+        <br><br>
+        <label><h4>Contraseña</h4></label>
+        <input class="form-control" type="password" name="password" placeholder="e.g 12+ alphanumerics" [(ngModel)]="usuario.password" id="password">
+        <br>
+
+        <button role="button" type="submit">Iniciar sesión</button> 
+    </form>
+</div>

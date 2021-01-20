@@ -1,0 +1,55 @@
+a:link, a:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: DarkSlateGray;
+}
+
+a:hover, a:active, h3:hover {
+    color: coral;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    color: orangered;
+}
+
+
+
+
+
+
+/*
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none
+}
+
+
+*/
+
+
+
+li {
+    text-align: left;
+    /*background-color: peachpuff;*/
+    background-color: peachpuff;
+    /*border: 5px solid coral;
+    padding: 25px;
+    margin: 25px;
+    */
+    border-color: papayawhip;
+}
+
+ul{
+    /*border: 5px solid coral;*/
+    padding: 10px;
+    margin: 20px;
+
+}

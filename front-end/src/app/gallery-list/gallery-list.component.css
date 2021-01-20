@@ -1,0 +1,49 @@
+
+.eliminar{
+  opacity: 0.6;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.example-container {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+td img{
+  padding: 20px;
+  width: 100%;
+  height: 50%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.example-card {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-full-width:nth-last-child(0) {
+  margin-bottom: 10px;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+
+.mat-flat-button {
+  margin: 5px;
+}

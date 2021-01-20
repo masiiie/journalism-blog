@@ -1,0 +1,38 @@
+/*
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: coral;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:not(.active){
+    
+}
+
+
+
+a:hover:not(.active) {
+    background-color: lightsalmon;
+    color: white;
+}
+
+.active {
+    background-color: coral; 
+    color: white;
+}

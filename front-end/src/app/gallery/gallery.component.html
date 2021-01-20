@@ -1,0 +1,38 @@
+<!-->
+<img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"
+class="rounded-circle z-depth-1-half avatar-pic"
+width="60%" height="60%" alt="example placeholder avatar">
+<br><br>
+<h4>Elegir foto</h4>
+<input [(ngModel)]="usuario.file" type="file" name="file">
+<-->
+
+
+<div class="example-container mat-elevation-z8">   
+
+  <h4>Seleccione foto de perfil</h4>
+  <div class="example-loading-shade" *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <mat-card class="example-card">
+    <form [formGroup]="galleryForm" (ngSubmit)="onFormSubmit()">
+      <figure>
+          <img *ngIf="foto != null" src="{{foto.imageUrl}}" id="{{foto._id}}" class="misfotos">
+          <img *ngIf="foto == null" src="../../assets/avatar.png">
+      </figure>
+      
+      <mat-form-field class="example-full-width">
+        <mat-label>Imagen</mat-label>
+        <ngx-mat-file-input formControlName="imageFile" placeholder="Imagen seleccionada" valuePlaceholder="..."
+          [errorStateMatcher]="matcher"></ngx-mat-file-input>
+        <mat-icon matSuffix><fa-icon [icon]="iconfolder"></fa-icon></mat-icon>
+        <mat-error>
+          <span *ngIf="!galleryForm.get('imageFile').valid">Por favor seleccione una imagen</span>
+        </mat-error>
+      </mat-form-field>
+      <div class="button-row">
+        <button type="submit" mat-flat-button color="primary"><mat-icon><fa-icon [icon]="flecha"></fa-icon></mat-icon></button>
+      </div>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <title>Bienaventurados</title>
+  <base href="/"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="./vendor/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+  <script src="./vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script>
+    $(document).ready(function(){
+  
+      for (let step = 1; step < 4; step++) {
+        $(`tbody > tr.emojis > :nth-child(${step})`).hover(function(){
+          $(`tbody > tr > th:nth-child(${step})`).css('display', 'inline-table');
+          $(`tbody > tr > th:nth-child(${step})`).css('position', 'absolute');
+          $(`tbody > tr > th:nth-child(${step})`).css('top', '11px');
+        },
+        function(){
+          $(`tbody > tr > th:nth-child(${step})`).css('display', 'none');
+        })
+    }
+    })
+  
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

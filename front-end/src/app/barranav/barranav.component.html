@@ -1,0 +1,61 @@
+<!-->
+<li class="nav-item">
+        <a class="nav-link" routerLink="/entrevistas">Entrevistas</a>
+</li>
+<li class="nav-item">
+        <a class="nav-link" routerLink="/actualidad">Actualidad</a>
+</li> 
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+
+<-->
+
+<nav class="navbar navbar-expand-lg"> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" routerLink="">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" routerLink="/posts">Artículos</a>
+                        </li>
+                        <li *ngFor="let x of tipo" class="nav-item">
+                                <a class="nav-link" routerLink="/posts/{{x.split(' ')[0]}}">{{titulos[x]}}</a>
+                        </li>
+                        <li *ngIf='getUserType()=="Admin"' class="nav-item">
+                            <a class="nav-link" routerLink="/users">Usuarios</a>
+                        </li> 
+                        <li class="nav-item" routerLinkActive='active' *ngIf='!isLoggedIn()'>
+                                <a class="nav-link" routerLink="/login">Iniciar sesión</a>
+                        </li>
+
+                        <!-->
+                        <li class="nav-item" routerLinkActive='active' *ngIf='isLoggedIn()'>
+                                <a class="nav-link" routerLink='/editp'>{{getUsername()}}</a>
+                        </li>
+
+                        <li class="nav-item" routerLinkActive='active' *ngIf='isLoggedIn()'>
+                                <a class="nav-link" (click)='doLogout()'>Cerrar sesión</a>
+                        </li>
+                        <-->
+
+                        <li class="nav-item dropdown" routerLinkActive='active' *ngIf='isLoggedIn()'>
+                                <a class="nav-link dropdown-toggle" data-toggle='dropdown'>
+                                        <!--><img class='perfilfotomini' [src]="getUserfoto()"><-->
+                                        {{getUsername()}}
+                                </a>
+                                <div class="dropdown-menu">
+                                        <a class="dropdown-item" (click)='doLogout()'>Cerrar sesión</a>
+                                </div>
+                        </li>       
+                </ul>
+                <!-->
+                <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar en el blog..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><fa-icon [icon]="search"></fa-icon></button>
+                </form>
+                <-->
+        </div>
+</nav>
+<!-->
+<-->

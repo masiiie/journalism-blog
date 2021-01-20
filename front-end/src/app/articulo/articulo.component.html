@@ -1,0 +1,72 @@
+<ul *ngIf="!editing" class="list-group">
+  <li class="list-group-item" *ngFor="let post of posts">
+    <div class="row">
+        <div class="col-sm-4">
+          <a routerLink="/post/{{post._id}}"><h3>{{post.titulo}}</h3></a>
+        </div>
+        <div class="col-sm-4"><span class="badge badge-danger">{{post.tipo}}</span></div>
+    </div>
+      <h5><fa-icon [icon]="reloj"></fa-icon>Por {{post.autor | tostringperson}} <br> {{post.fecha | tonormaldate | tomayuscula}}</h5>
+      <p>{{post.contenido.slice(0, 400)}} <a routerLink="/post/{{post._id}}"><h5>... Leer más</h5></a></p>
+      <button *ngIf='getusertype() == "Admin"' (click)="eliminar(post._id)"><fa-icon [icon]="removeicon"></fa-icon></button> 
+      <button *ngIf='getusertype() == "Admin"' (click)="editar(post._id)"><fa-icon [icon]="editicon"></fa-icon></button> 
+  </li>
+
+      <h4 *ngIf="posts.length == 0">No se ha publicado ningún artículo en esta categoría.</h4>
+      <button *ngIf='getusertype() == "Admin"' routerLink="/postnew">Nuevo artículo</button> 
+</ul>
+
+<app-nuevo-articulo *ngIf="editing" [toedit]='toedit'></app-nuevo-articulo>
+
+
+
+<!-->
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let post of posts">
+      <div class="row">
+          <div class="col-sm-4">
+            <a routerLink="/post/{{post.id}}"><h3>{{post.titulo}}</h3></a>
+          </div>
+          <div class="col-sm-4"><span class="badge badge-danger">{{post.tipo}}</span></div>
+      </div>
+        <h5><fa-icon [icon]="reloj"></fa-icon>Por {{post.autor}} <br> {{post.fecha}}</h5>
+        <p>{{post.contenido.slice(0, 400)}} <a routerLink="/post/{{post.id}}"><h5>... Leer más</h5></a></p>
+  </li>
+</ul>
+<-->
+
+
+
+
+
+
+
+
+
+
+
+<!-->
+
+<div class="row">
+  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+  <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+</div>
+
+<span class="glyphicon glyphicon-time"></span>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<-->
+
+
+
+<!-- <div> <img [src] = 'post.autor.foto' width="100" height="100"> <span>Autor: </span></div>
+<div><span>Fecha: </span></div> -->
+
+
+<!-- aqui no me sale el relojito no se porque-->

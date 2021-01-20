@@ -1,0 +1,287 @@
+/* You can add global styles to this file, and also import other style files */
+input[type=submit]:hover, button:hover {
+  background-color: lightsalmon;
+}
+
+fa-icon{
+  width: 100%;
+  padding: 3px;
+}
+
+.perfilfotomini{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+button:hover{
+  border: 0px;
+}
+
+li button, .eliminar {
+  align-items: center;
+  padding: 3px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  top:0;
+  right:0;
+}
+
+button {
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.titulo_post{
+  font-family: "Rage Italic LET Plain:1.0 V1"
+}
+
+.fecha_autor{
+  font-family: "BankGothic Md BT Medium";
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: DarkSlateGray;
+  font-family: "Rage Italic LET Plain:1.0 V1"
+}
+
+.red{
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+
+input[type=text], input[type=date], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: coral;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+fa-icon{
+  margin-right: 5px;
+}
+
+
+#mytitle {
+  color: coral;
+  font-size: 130px;
+  /*color: white;*/
+  text-align: center;
+  font-family: "Rage Italic LET Plain:1.0 V1"
+}
+
+#spt{
+font-family: "BankGothic Md BT Medium";
+}
+
+
+@font-face {font-family: "Rage Italic LET Plain:1.0 V1";
+src: url("./fuentes/Rage Italic LET Plain_1.0 V1/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.eot"); /* IE9*/
+src: url("./fuentes/Rage Italic LET Plain_1.0 V1/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+/*url("../fuentes/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.woff2") format("woff2"),  chrome、firefox */
+url("./fuentes/Rage Italic LET Plain_1.0 V1/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.woff") format("woff"), /* chrome、firefox */
+url("./fuentes/Rage Italic LET Plain_1.0 V1/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+url("./fuentes/Rage Italic LET Plain_1.0 V1/@font-face/9cdf7f2865766bd5e3291dbc8d87222f.svg#Rage Italic LET Plain:1.0 V1") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "BankGothic Md BT Medium";
+src: url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.eot"); /* IE9*/
+src: url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.woff2") format("woff2"), /* chrome、firefox */
+url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.woff") format("woff"), /* chrome、firefox */
+url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+url("./fuentes/BankGothic Md BT Medium/@font-face/adfd298e421945768d7bf13da3ee8a45.svg#BankGothic Md BT Medium") format("svg"); /* iOS 4.1- */
+}
+
+
+
+.container .jumbotron{
+  background-color: peachpuff;
+}
+
+.jumbotron{
+  background-color: papayawhip;
+}
+
+
+
+
+/*Copiado del template lindo a partir de aqui*/
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  /*background-color: papayawhip;*/
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+html, body { height: 100%; }
+body{
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /*font-family: 'Times New Roman', Times, serif;*/
+  background-color: papayawhip;
+}

@@ -6,8 +6,13 @@ Personal blog for a journalist friend to publish classified content especially i
 
 To run de server execute in back-end:
 
+```
 ng serve 
+```
+
 
 Before all install npm dependencies:
 
+```
 npm install
+```
